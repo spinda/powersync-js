@@ -67,6 +67,11 @@ export type AbstractRemoteOptions = {
    * Binding should be done before passing here.
    */
   fetchImplementation: FetchImplementation | FetchImplementationProvider;
+
+  /**
+   * Optionally provide a factory for constructing WebSocket clients.
+   */
+  webSocketFactory: (url: string) => WebSocket;
 };
 
 export const DEFAULT_REMOTE_OPTIONS: AbstractRemoteOptions = {
@@ -74,7 +79,8 @@ export const DEFAULT_REMOTE_OPTIONS: AbstractRemoteOptions = {
     url.replace(/^https?:\/\//, function (match) {
       return match === 'https://' ? 'wss://' : 'ws://';
     }),
-  fetchImplementation: new FetchImplementationProvider()
+  fetchImplementation: new FetchImplementationProvider(),
+  webSocketFactory: (url) => new WebSocket(url)
 };
 
 export abstract class AbstractRemote {
@@ -229,7 +235,8 @@ export abstract class AbstractRemote {
 
     const connector = new RSocketConnector({
       transport: new WebsocketClientTransport({
-        url: this.options.socketUrlTransformer(request.url)
+        url: this.options.socketUrlTransformer(request.url),
+        wsCreator: this.options.webSocketFactory
       }),
       setup: {
         keepAlive: KEEP_ALIVE_MS,

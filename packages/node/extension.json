@@ -1,0 +1,32 @@
+{
+  "repo": "powersync-ja/powersync-sqlite-core",
+  "tag": "v0.3.8",
+  "assets": {
+    "darwin": {
+      "arm64": {
+        "fileName": "libpowersync_x64.dylib",
+        "sha256": "72c95d274f233510b52103854e07c8261deaecffe44ac6b2cc84ec7b26382eb7"
+      },
+      "x64": {
+        "fileName": "libpowersync_x64.dylib",
+        "sha256": "226ad44bf12722f3d49595b5590e3b10d0833b196772365aac39c16aa09ae156"
+      }
+    },
+    "linux": {
+      "arm64": {
+        "fileName": "libpowersync_aarch64.so",
+        "sha256": "79a5ebedcaa4e45a6415e085689fa34a1f9c1927382e15ca5b9933a1df4c07c0"
+      },
+      "x64": {
+        "fileName": "libpowersync_x64.so",
+        "sha256": "d47c5d2c2f538878cc17b18259db1fe2358867bf14f09d8d8a8777b5cce99b89"
+      }
+    },
+    "win32": {
+      "x64": {
+        "fileName": "powersync_x64.dll",
+        "sha256": "33bba56bddd4fe9cad0a39644ad07c8a9cbe8661394b2e242430b68a3ee102b9"
+      }
+    }
+  }
+}
