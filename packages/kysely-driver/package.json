@@ -1,27 +1,28 @@
 {
   "name": "@powersync/kysely-driver",
   "version": "1.1.0",
-  "description": "Kysely driver for PowerSync",
-  "main": "lib/src/index.js",
-  "types": "lib/src/index.d.ts",
-  "author": "JOURNEYAPPS",
-  "license": "Apache-2.0",
-  "files": [
-    "lib"
-  ],
-  "repository": "https://github.com/powersync-ja/powersync-js",
-  "bugs": {
-    "url": "https://github.com/powersync-ja/powersync-js/issues"
-  },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/",
     "access": "public"
   },
+  "description": "Kysely driver for PowerSync",
+  "author": "JOURNEYAPPS",
+  "license": "Apache-2.0",
   "homepage": "https://docs.powersync.com",
+  "repository": "github:powersync-ja/powersync-js",
+  "bugs": {
+    "url": "https://github.com/powersync-ja/powersync-js/issues"
+  },
+  "type": "module",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsc --build",
     "build:prod": "tsc --build --sourceMap false",
-    "clean": "rm -rf lib tsconfig.tsbuildinfo",
+    "clean": "rm -rf dist tsconfig.tsbuildinfo",
     "watch": "tsc --build -w",
     "test": "pnpm build && vitest"
   },
@@ -32,8 +33,9 @@
     "kysely": "^0.27.4"
   },
   "devDependencies": {
-    "@powersync/web": "workspace:*",
     "@journeyapps/wa-sqlite": "^1.0.0",
+    "@powersync/web": "workspace:*",
+    "@tsconfig/node-lts": "^22.0.1",
     "@types/node": "^20.17.6",
     "@vitest/browser": "^2.1.4",
     "ts-loader": "^9.5.1",

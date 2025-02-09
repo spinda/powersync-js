@@ -6,11 +6,17 @@
     "access": "public"
   },
   "description": "PowerSync - sync Postgres with SQLite in your Node.js app for offline-first and real-time data",
+  "author": "JOURNEYAPPS",
+  "license": "Apache-2.0",
+  "homepage": "https://docs.powersync.com/",
+  "repository": "github:powersync-ja/powersync-js",
+  "bugs": {
+    "url": "https://github.com/powersync-ja/powersync-js/issues"
+  },
   "type": "module",
-  "main": "./lib/index.js",
-  "types": "./lib/index.d.ts",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
   "files": [
-    "lib",
     "dist",
     "extension.json",
     "postinstall.mjs"
@@ -18,20 +24,10 @@
   "scripts": {
     "build": "tsc -b",
     "build:prod": "tsc -b --sourceMap false",
-    "clean": "rm -rf lib dist tsconfig.tsbuildinfo dist",
+    "clean": "rm -rf dist tsconfig.tsbuildinfo dist",
     "postinstall": "node postinstall.mjs",
     "watch": "tsc -b -w"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/powersync-ja/powersync-js.git"
-  },
-  "author": "JOURNEYAPPS",
-  "license": "Apache-2.0",
-  "bugs": {
-    "url": "https://github.com/powersync-ja/powersync-js/issues"
-  },
-  "homepage": "https://docs.powersync.com/",
   "peerDependencies": {
     "@powersync/common": "workspace:^1.22.0",
     "better-sqlite3": "github:spinda/better-sqlite3#flexwash"
@@ -44,6 +40,7 @@
     "ws": "^8.18.0"
   },
   "devDependencies": {
+    "@tsconfig/node-lts": "^22.0.1",
     "@types/async-lock": "^1.4.0",
     "@types/better-sqlite3": "github:spinda/DefinitelyTyped#flexwash&path:/types/better-sqlite3",
     "@types/ws": "^8.5.13",

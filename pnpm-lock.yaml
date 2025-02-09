@@ -234,16 +234,16 @@ importers:
     dependencies:
       '@capacitor/android':
         specifier: ^6.0.0
-        version: 6.1.2(@capacitor/core@6.2.0)
+        version: 6.1.2(@capacitor/core@7.0.1)
       '@capacitor/core':
         specifier: latest
-        version: 6.2.0
+        version: 7.0.1
       '@capacitor/ios':
         specifier: ^6.0.0
-        version: 6.1.2(@capacitor/core@6.2.0)
+        version: 6.1.2(@capacitor/core@7.0.1)
       '@capacitor/splash-screen':
         specifier: latest
-        version: 6.0.3(@capacitor/core@6.2.0)
+        version: 7.0.0(@capacitor/core@7.0.1)
       '@journeyapps/wa-sqlite':
         specifier: ^1.0.0
         version: 1.0.0
@@ -1687,6 +1687,9 @@ importers:
       '@powersync/web':
         specifier: workspace:*
         version: link:../web
+      '@tsconfig/node-lts':
+        specifier: ^22.0.1
+        version: 22.0.1
       '@types/node':
         specifier: ^20.17.6
         version: 20.17.6
@@ -1728,7 +1731,7 @@ importers:
         version: 1.4.1
       better-sqlite3:
         specifier: github:spinda/better-sqlite3#flexwash
-        version: https://codeload.github.com/spinda/better-sqlite3/tar.gz/13384d3ee046c6f9716c693e488ace0805a89b82
+        version: https://codeload.github.com/spinda/better-sqlite3/tar.gz/2f8150537aaf30f5f50e5091e18a7660e717cb43
       bson:
         specifier: ^6.6.0
         version: 6.8.0
@@ -1739,6 +1742,9 @@ importers:
         specifier: ^8.18.0
         version: 8.18.0
     devDependencies:
+      '@tsconfig/node-lts':
+        specifier: ^22.0.1
+        version: 22.0.1
       '@types/async-lock':
         specifier: ^1.4.0
         version: 1.4.2
@@ -3790,18 +3796,18 @@ packages:
     engines: {node: '>=18.0.0'}
     hasBin: true
 
-  '@capacitor/core@6.2.0':
-    resolution: {integrity: sha512-B9IlJtDpUqhhYb+T8+cp2Db/3RETX36STgjeU2kQZBs/SLAcFiMama227o+msRjLeo3DO+7HJjWVA1+XlyyPEg==}
+  '@capacitor/core@7.0.1':
+    resolution: {integrity: sha512-1Ob9bvA/p8g8aNwK6VesxEekGXowLVf6APjkW4LRnr05H+7z/bke+Q5pn9zqh/GgTbIxAQ/rwZrAZvvxkdm1UA==}
 
   '@capacitor/ios@6.1.2':
     resolution: {integrity: sha512-HaeW68KisBd/7TmavzPDlL2bpoDK5AjR2ZYrqU4TlGwM88GtQfvduBCAlSCj20X0w/4+rWMkseD9dAAkacjiyQ==}
     peerDependencies:
       '@capacitor/core': ^6.1.0
 
-  '@capacitor/splash-screen@6.0.3':
-    resolution: {integrity: sha512-tpVljeNGSwVCIc8lMQkyiCQFokk2PwgYPdDtPnGjFthqmXW/WhIxW8QYl4MUqyLwwgwTEbp4u3Kcv2zqQu2L6Q==}
+  '@capacitor/splash-screen@7.0.0':
+    resolution: {integrity: sha512-y25WNRcl+MY/ltb3OZPZPpNmhVFW9270QneJY8tjY7FJc78zWEszj1cX84LJS4LeTHfHi4NcNW4y0/oewWG88A==}
     peerDependencies:
-      '@capacitor/core': ^6.0.0
+      '@capacitor/core': '>=7.0.0'
 
   '@changesets/apply-release-plan@7.0.5':
     resolution: {integrity: sha512-1cWCk+ZshEkSVEZrm2fSj1Gz8sYvxgUL4Q78+1ZZqeqfuevPTPk033/yUZ3df8BKMohkqqHfzj0HOOrG0KtXTw==}
@@ -8363,6 +8369,9 @@ packages:
     resolution: {integrity: sha512-L7z9BgrNEcYyUYtF+HaEfiS5ebkh9jXqbszz7pC0hRBPaatV0XjSD3+eHrpqFemQfgwiFF0QPIarnIihIDn7OA==}
     engines: {node: '>=10.13.0'}
 
+  '@tsconfig/node-lts@22.0.1':
+    resolution: {integrity: sha512-BwlbLiYurZKrj+Pa6etSE1jXmr3VEDdgJto1jEYKcpBVwZZSWVkCPyFEFYbHdIOaFMlSTtV206DYPlT109aqug==}
+
   '@tsconfig/node10@1.0.11':
     resolution: {integrity: sha512-DcRjDCujK/kCk/cUe8Xz8ZSpm8mS3mNNpta+jGCA6USEDfktlNvm1+IuZ9eTcDbNk41BHwpHHeW+N1lKCz4zOw==}
 
@@ -9812,8 +9821,8 @@ packages:
   better-sqlite3@11.7.2:
     resolution: {integrity: sha512-10a57cHVDmfNQS4jrZ9AH2t+2ekzYh5Rhbcnb4ytpmYweoLdogDmyTt5D+hLiY9b44Mx9foowb/4iXBTO2yP3Q==}
 
-  better-sqlite3@https://codeload.github.com/spinda/better-sqlite3/tar.gz/13384d3ee046c6f9716c693e488ace0805a89b82:
-    resolution: {tarball: https://codeload.github.com/spinda/better-sqlite3/tar.gz/13384d3ee046c6f9716c693e488ace0805a89b82}
+  better-sqlite3@https://codeload.github.com/spinda/better-sqlite3/tar.gz/2f8150537aaf30f5f50e5091e18a7660e717cb43:
+    resolution: {tarball: https://codeload.github.com/spinda/better-sqlite3/tar.gz/2f8150537aaf30f5f50e5091e18a7660e717cb43}
     version: 11.7.2
 
   big-integer@1.6.52:
@@ -25503,9 +25512,9 @@ snapshots:
       '@types/tough-cookie': 4.0.5
       tough-cookie: 4.1.4
 
-  '@capacitor/android@6.1.2(@capacitor/core@6.2.0)':
+  '@capacitor/android@6.1.2(@capacitor/core@7.0.1)':
     dependencies:
-      '@capacitor/core': 6.2.0
+      '@capacitor/core': 7.0.1
 
   '@capacitor/cli@6.1.2':
     dependencies:
@@ -25530,17 +25539,17 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@capacitor/core@6.2.0':
+  '@capacitor/core@7.0.1':
     dependencies:
       tslib: 2.7.0
 
-  '@capacitor/ios@6.1.2(@capacitor/core@6.2.0)':
+  '@capacitor/ios@6.1.2(@capacitor/core@7.0.1)':
     dependencies:
-      '@capacitor/core': 6.2.0
+      '@capacitor/core': 7.0.1
 
-  '@capacitor/splash-screen@6.0.3(@capacitor/core@6.2.0)':
+  '@capacitor/splash-screen@7.0.0(@capacitor/core@7.0.1)':
     dependencies:
-      '@capacitor/core': 6.2.0
+      '@capacitor/core': 7.0.1
 
   '@changesets/apply-release-plan@7.0.5':
     dependencies:
@@ -33660,6 +33669,8 @@ snapshots:
 
   '@trysound/sax@0.2.0': {}
 
+  '@tsconfig/node-lts@22.0.1': {}
+
   '@tsconfig/node10@1.0.11': {}
 
   '@tsconfig/node12@1.0.11': {}
@@ -35772,10 +35783,9 @@ snapshots:
       prebuild-install: 7.1.2
     optional: true
 
-  better-sqlite3@https://codeload.github.com/spinda/better-sqlite3/tar.gz/13384d3ee046c6f9716c693e488ace0805a89b82:
+  better-sqlite3@https://codeload.github.com/spinda/better-sqlite3/tar.gz/2f8150537aaf30f5f50e5091e18a7660e717cb43:
     dependencies:
       bindings: 1.5.0
-      prebuild-install: 7.1.2
 
   big-integer@1.6.52: {}
 
@@ -36289,7 +36299,8 @@ snapshots:
     dependencies:
       readdirp: 4.0.2
 
-  chownr@1.1.4: {}
+  chownr@1.1.4:
+    optional: true
 
   chownr@2.0.0: {}
 
@@ -38665,7 +38676,8 @@ snapshots:
       signal-exit: 4.1.0
       strip-final-newline: 3.0.0
 
-  expand-template@2.0.3: {}
+  expand-template@2.0.3:
+    optional: true
 
   expand-tilde@2.0.2:
     dependencies:
@@ -39634,7 +39646,8 @@ snapshots:
 
   fresh@0.5.2: {}
 
-  fs-constants@1.0.0: {}
+  fs-constants@1.0.0:
+    optional: true
 
   fs-extra@10.1.0:
     dependencies:
@@ -39864,7 +39877,8 @@ snapshots:
 
   getenv@1.0.0: {}
 
-  github-from-package@0.0.0: {}
+  github-from-package@0.0.0:
+    optional: true
 
   github-slugger@1.5.0: {}
 
@@ -43354,7 +43368,8 @@ snapshots:
 
   nanoid@3.3.7: {}
 
-  napi-build-utils@1.0.2: {}
+  napi-build-utils@1.0.2:
+    optional: true
 
   native-run@2.0.1:
     dependencies:
@@ -43451,6 +43466,7 @@ snapshots:
   node-abi@3.72.0:
     dependencies:
       semver: 7.6.3
+    optional: true
 
   node-abort-controller@3.1.1: {}
 
@@ -44752,6 +44768,7 @@ snapshots:
       simple-get: 4.0.1
       tar-fs: 2.1.2
       tunnel-agent: 0.6.0
+    optional: true
 
   preferred-pm@3.1.4:
     dependencies:
@@ -47038,13 +47055,15 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  simple-concat@1.0.1: {}
+  simple-concat@1.0.1:
+    optional: true
 
   simple-get@4.0.1:
     dependencies:
       decompress-response: 6.0.0
       once: 1.4.0
       simple-concat: 1.0.1
+    optional: true
 
   simple-plist@1.3.1:
     dependencies:
@@ -47764,6 +47783,7 @@ snapshots:
       mkdirp-classic: 0.5.3
       pump: 3.0.2
       tar-stream: 2.2.0
+    optional: true
 
   tar-fs@3.0.4:
     dependencies:
@@ -47786,6 +47806,7 @@ snapshots:
       fs-constants: 1.0.0
       inherits: 2.0.4
       readable-stream: 3.6.2
+    optional: true
 
   tar-stream@3.1.7:
     dependencies:

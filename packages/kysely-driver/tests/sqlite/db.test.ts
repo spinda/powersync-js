@@ -1,9 +1,9 @@
 import { afterEach, beforeEach, describe, expect, it } from 'vitest';
-import * as SUT from '../../src/sqlite/db';
+import * as SUT from '../../src/sqlite/db.js';
 import { Kysely, sql } from 'kysely';
-import { getPowerSyncDb } from '../setup/db';
+import { getPowerSyncDb } from '../setup/db.js';
 import { AbstractPowerSyncDatabase } from '@powersync/common';
-import { Database, UsersTable } from '../setup/types';
+import { Database } from '../setup/types.js';
 
 describe('CRUD operations', () => {
   let powerSyncDb: AbstractPowerSyncDatabase;

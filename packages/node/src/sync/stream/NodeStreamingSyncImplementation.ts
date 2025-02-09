@@ -15,7 +15,7 @@ const LOCKS = new Map<string, Lock>();
 const lockTypes = new Set(Object.values(LockType));
 
 export class NodeStreamingSyncImplementation extends AbstractStreamingSyncImplementation {
-  locks: Lock;
+  locks!: Lock;
 
   constructor(options: AbstractStreamingSyncImplementationOptions) {
     super(options);

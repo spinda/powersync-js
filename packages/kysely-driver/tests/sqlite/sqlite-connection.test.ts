@@ -1,8 +1,8 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { AbstractPowerSyncDatabase } from '@powersync/common';
 import { type CompiledQuery } from 'kysely';
-import * as SUT from '../../src/sqlite/sqlite-connection';
-import { getPowerSyncDb } from '../setup/db';
+import * as SUT from '../../src/sqlite/sqlite-connection.js';
+import { getPowerSyncDb } from '../setup/db.js';
 
 describe('PowerSyncConnection', () => {
   let powerSyncConnection: SUT.PowerSyncConnection;

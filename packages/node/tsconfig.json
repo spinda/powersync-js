@@ -1,10 +1,11 @@
 {
-  "extends": "../../tsconfig.base",
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "@tsconfig/node-lts/tsconfig.json",
   "compilerOptions": {
-    "baseUrl": "./",
-    "rootDir": "src",
-    "outDir": "./lib",
-    "strictNullChecks": true
+    "rootDir": ".",
+    "outDir": "dist",
+    "declaration": true,
+    "sourceMap": true
   },
   "references": [
     {

@@ -1,4 +1,4 @@
-import { wrapPowerSyncWithKysely, type PowerSyncKyselyDatabase } from './sqlite/db';
+import { wrapPowerSyncWithKysely, type PowerSyncKyselyDatabase } from './sqlite/db.js';
 import {
   type ColumnType,
   type Insertable,

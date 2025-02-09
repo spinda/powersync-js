@@ -1,7 +1,7 @@
 import { Kysely, SqliteAdapter, SqliteIntrospector, SqliteQueryCompiler } from 'kysely';
-import * as SUT from '../../src/sqlite/sqlite-dialect';
+import * as SUT from '../../src/sqlite/sqlite-dialect.js';
 import { describe, it, expect, vitest } from 'vitest';
-import { PowerSyncDriver } from '../../src/sqlite/sqlite-driver';
+import { PowerSyncDriver } from '../../src/sqlite/sqlite-driver.js';
 import { AbstractPowerSyncDatabase } from '@powersync/web';
 
 describe('PowerSyncDialect', () => {

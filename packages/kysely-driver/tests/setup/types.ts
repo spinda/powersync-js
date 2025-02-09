@@ -1,5 +1,5 @@
 import { Insertable, Selectable, Updateable } from 'kysely';
-import { TestSchema } from './db';
+import { TestSchema } from './db.js';
 
 export type Database = (typeof TestSchema)['types'];
 
