@@ -4,7 +4,7 @@
   "assets": {
     "darwin": {
       "arm64": {
-        "fileName": "libpowersync_x64.dylib",
+        "fileName": "libpowersync_aarch64.dylib",
         "sha256": "72c95d274f233510b52103854e07c8261deaecffe44ac6b2cc84ec7b26382eb7"
       },
       "x64": {
